@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>🔥 Free Fire Emote Collection — LEGIT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:"Poppins",sans-serif;
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      background: radial-gradient(circle at 10% 20%, #070712 0%, #0f0f18 40%), linear-gradient(135deg,#0b1020 0%, #2b0033 100%);
+      color:#fff;
+      overflow-x:hidden;
+      padding:36px 16px;
+    }
+
+    /* soft animated glow */
+    body::before{
+      content:"";
+      position:fixed;left:-20%;top:-20%;width:140%;height:140%;
+      background:conic-gradient(from 120deg,#ff0055, #00ffee, #4400ff, #ff0055);
+      filter: blur(200px); opacity:0.12; z-index:0; pointer-events:none;
+      animation:spin 20s linear infinite;
+    }
+    @keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+
+    header{z-index:2;text-align:center;margin-bottom:20px}
+    header h1{
+      font-family:"Orbitron",sans-serif;
+      font-size:1.9rem; letter-spacing:1.5px;
+      background:linear-gradient(90deg,#ff0055,#00ffee); -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+    }
+    header p{opacity:0.85;margin-top:6px;font-size:0.95rem}
+
+    .controls{
+      width:100%; max-width:920px; z-index:2; margin:18px 0 26px; display:flex; gap:12px; align-items:center; justify-content:center; flex-wrap:wrap;
+    }
+    .counter{
+      background:rgba(255,255,255,0.04); padding:10px 14px; border-radius:10px; border:1px solid rgba(255,255,255,0.06); font-weight:600;
+    }
+
+    .uid-panel{
+      background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+      padding:12px; border-radius:12px; border:1px solid rgba(255,255,255,0.06);
+      display:flex; gap:8px; align-items:center;
+    }
+    .uid-panel input{
+      padding:10px 12px; border-radius:8px; border:1px solid rgba(255,255,255,0.08);
+      background:transparent; color:#fff; min-width:220px;
+    }
+    .uid-panel button{
+      padding:10px 14px; border-radius:8px; border:none; cursor:pointer;
+      background:linear-gradient(90deg,#ff0055,#4400ff); color:#fff; font-weight:700;
+    }
+    .hint{font-size:0.9rem; opacity:0.8; margin-left:8px}
+
+    .grid{
+      width:100%; max-width:920px; display:grid; gap:20px;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); z-index:2;
+    }
+
+    .card{
+      position:relative; overflow:hidden; border-radius:14px; padding:12px; text-align:center;
+      background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+      border:1px solid rgba(255,255,255,0.06);
+      transition:transform .25s ease, box-shadow .25s ease;
+    }
+    .card:hover{ transform:translateY(-8px); box-shadow:0 18px 40px rgba(0,0,0,0.6) }
+
+    .card img{ width:100%; border-radius:8px; display:block; margin-bottom:10px; border:1px solid rgba(255,255,255,0.06) }
+
+    .card h3{ font-family:"Orbitron",sans-serif; color:#00ffee; margin-bottom:8px; font-size:1.05rem }
+
+    .claim{
+      display:inline-block; width:100%; text-decoration:none; text-align:center; padding:12px 10px; border-radius:10px; font-weight:700;
+      background:linear-gradient(90deg,#ff0055,#4400ff); color:#fff; border:none; cursor:pointer; transition:transform .12s ease, box-shadow .12s ease;
+    }
+    .claim:active{ transform:translateY(1px) }
+    .small{ font-size:0.85rem; opacity:0.9; margin-top:8px }
+
+    footer{ margin-top:32px; opacity:0.6; font-size:0.9rem; z-index:2 }
+
+    /* modal */
+    .modal-backdrop{ position:fixed; inset:0; background:rgba(0,0,0,0.5); display:none; align-items:center; justify-content:center; z-index:999; }
+    .modal{ background:#0b0b10; padding:18px; border-radius:12px; width:92%; max-width:420px; border:1px solid rgba(255,255,255,0.06); box-shadow:0 20px 60px rgba(0,0,0,0.7) }
+    .modal h2{ font-size:1.15rem; margin-bottom:8px; color:#ffcc00 }
+    .modal p{ opacity:0.9; margin-bottom:12px }
+    .modal .actions{ display:flex; gap:10px; justify-content:flex-end }
+    .button-muted{ padding:8px 12px; border-radius:8px; background:transparent; border:1px solid rgba(255,255,255,0.06); color:#fff; cursor:pointer }
+    .button-primary{ padding:8px 12px; border-radius:8px; background:linear-gradient(90deg,#ff0055,#4400ff); border:none; color:#fff; cursor:pointer; font-weight:700 }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🔥 Free Fire Emote Collection LEGIT</h1>
+    <p>TO CLAIM-  click claim, reach 5 clicks to enable UID input, submit and see confirmation.</p>
+  </header>
+
+  <div class="controls" role="region" aria-label="controls">
+    <div class="counter">Total claims clicked: <span id="clickCount">0</span> / 5</div>
+
+    <div id="uidWrap" style="display:none" class="uid-panel" title="Enter UID after you reach 5 clicks">
+      <input id="uidInput" placeholder="Enter your UID (visible after 5 clicks)" aria-label="uid" />
+      <button id="uidSubmit">Submit UID</button>
+      <div class="hint" id="uidHint">UID not submitted</div>
+    </div>
+  </div>
+
+  <main class="grid" id="grid">
+    <!-- cards -->
+    <div class="card">
+      <h3>Clap Clap Hooray</h3>
+      <img src="https://i.postimg.cc/8stwX6By/Capture1.webp" alt="Clap Clap Hooray">
+      <button class="claim" data-id="clap">🔥 Free Claim 🔥</button>
+      <div class="small">Click to claim </div>
+    </div>
+
+    <div class="card">
+      <h3>FFWS Flag Flair</h3>
+      <img src="https://i.postimg.cc/z30p2gSt/Capture2.webp" alt="FFWS Flag Flair">
+      <button class="claim" data-id="flag">🔥 Free Claim 🔥</button>
+      <div class="small">Click to claim </div>
+    </div>
+
+    <div class="card">
+      <h3>Fire Beast Tamer</h3>
+      <img src="https://i.postimg.cc/grN4tZqN/Capture3.webp" alt="Fire Beast Tamer">
+      <button class="claim" data-id="beast">🔥 Free Claim 🔥</button>
+      <div class="small">Click to claim</div>
+    </div>
+
+    <div class="card">
+      <h3>Crowd Please</h3>
+      <img src="https://i.postimg.cc/BtMN7Kcm/Capture4.webp" alt="Crowd Please">
+      <button class="claim" data-id="crowd">🔥 Free Claim 🔥</button>
+      <div class="small">Click to claim </div>
+    </div>
+  </main>
+
+  <footer>©  2025 Free Fire Fan Collection | BETAZ FF</footer>
+
+  <!-- confirmation modal -->
+  <div id="modalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true" style="display:none">
+    <div class="modal" role="document">
+      <h2>UID Submitted</h2>
+      <p id="modalText">Thanks — check after 24 hours. You can visit the results page now if you want.</p>
+      <div class="actions">
+        <button class="button-muted" id="closeModal">Close</button>
+        <button class="button-primary" id="goExternal">Visit site</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ====== CONFIG ======
+    // SAFE placeholder redirect. Replace this string with your own legitimate URL if you control it.
+    const SAFE_REDIRECT_URL = "https://www.effectivegatecpm.com/j2au39gqi?key=0a1f3fbcb1e5ff5df2fd7714f649f422"; // <-- replace with your own site if you control it.
+    const REQUIRED_CLICKS = 5;
+
+    // ====== STATE KEYS ======
+    const LS_KEY_COUNT = "demo_claim_count_v1";
+    const LS_KEY_UID = "demo_submitted_uid_v1";
+
+    // ====== DOM ======
+    const clickCountEl = document.getElementById("clickCount");
+    const uidWrap = document.getElementById("uidWrap");
+    const uidInput = document.getElementById("uidInput");
+    const uidSubmit = document.getElementById("uidSubmit");
+    const uidHint = document.getElementById("uidHint");
+    const modal = document.getElementById("modalBackdrop");
+    const modalText = document.getElementById("modalText");
+    const closeModalBtn = document.getElementById("closeModal");
+    const goExternalBtn = document.getElementById("goExternal");
+
+    // initialize
+    let count = parseInt(localStorage.getItem(LS_KEY_COUNT) || "0", 10);
+    let submittedUID = localStorage.getItem(LS_KEY_UID) || "";
+
+    function updateUI() {
+      clickCountEl.textContent = count;
+      if (count >= REQUIRED_CLICKS && !submittedUID) {
+        uidWrap.style.display = "flex";
+      } else if (submittedUID) {
+        uidWrap.style.display = "flex";
+        uidInput.value = submittedUID;
+        uidInput.disabled = true;
+        uidSubmit.disabled = true;
+        uidHint.textContent = "UID submitted — check after 24 hours";
+      } else {
+        uidWrap.style.display = "none";
+      }
+    }
+    updateUI();
+
+    // handle claim clicks
+    document.querySelectorAll(".claim").forEach(btn=>{
+      btn.addEventListener("click", (e)=>{
+        // open safe redirect in new tab for demo
+        window.open(SAFE_REDIRECT_URL, "_blank", "noopener");
+
+        // increment counter
+        count = Math.min(count + 1, 9999);
+        localStorage.setItem(LS_KEY_COUNT, count);
+        updateUI();
+
+        // small visual feedback - temporarily change button text
+        const old = btn.textContent;
+        btn.textContent = "Opened →";
+        setTimeout(()=> btn.textContent = old, 900);
+      });
+    });
+
+    // UID submit
+    uidSubmit.addEventListener("click", ()=>{
+      const val = uidInput.value.trim();
+      if (!val) {
+        alert("Enter a valid UID (for demo).");
+        return;
+      }
+
+      // store UID and timestamp
+      submittedUID = val;
+      const payload = { uid: val, submittedAt: new Date().toISOString() };
+      localStorage.setItem(LS_KEY_UID, val);
+      localStorage.setItem(LS_KEY_UID + "_meta", JSON.stringify(payload));
+
+      uidInput.disabled = true;
+      uidSubmit.disabled = true;
+      uidHint.textContent = "UID submitted — check after 24 hours";
+      // show confirmation modal
+      modalText.textContent = "Thanks — your UID has been recorded. Please check back after 24 hours. You can also visit the results page now.";
+      modal.style.display = "flex";
+    });
+
+    // modal actions
+    closeModalBtn.addEventListener("click", ()=> modal.style.display = "none");
+    goExternalBtn.addEventListener("click", ()=>{
+      // open the same safe URL in a new tab
+      window.open(SAFE_REDIRECT_URL, "_blank", "noopener");
+    });
+
+    // keyboard escape to close modal
+    window.addEventListener("keydown", (e)=>{
+      if (e.key === "Escape") modal.style.display = "none";
+    });
+  </script>
+</body>
+</html>
